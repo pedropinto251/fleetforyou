@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fleetforyou.fleetforyou.Controllers.Rents.DashboardRentsDeleteController">
+    <children>
+      <ImageView fitHeight="700.0" fitWidth="1200.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Images/vanishing-stripes.png" />
+         </image>
+      </ImageView>
+        <Pane prefHeight="120.0" prefWidth="1200.0" styleClass="pane7" stylesheets="@../../stylesheet.css" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="115.0" layoutY="24.0" text="Gestão de Alugueres" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="50.0" />
+                    </font>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </Label>
+                <FontAwesomeIconView fill="WHITE" glyphName="FILE" layoutX="50.0" layoutY="75.0" size="50">
+                    <effect>
+                        <Glow />
+                    </effect>
+                </FontAwesomeIconView>
+            </children>
+        </Pane>
+        <Pane layoutY="121.0" prefHeight="583.0" prefWidth="1200.0">
+            <children>
+                <TableView fx:id="rentalTV" layoutX="11.0" layoutY="57.0" prefHeight="473.0" prefWidth="1172.0">
+                    <columns>
+                        <TableColumn fx:id="rentalIdTC" prefWidth="75.0" text="ID" />
+                        <TableColumn fx:id="dateStartTC" prefWidth="276.0" text="Data Começo" />
+                        <TableColumn fx:id="dateEndTC" prefWidth="243.0" text="Data Fim" />
+                        <TableColumn fx:id="dateReturnTC" prefWidth="270.0" text="Data Retorno" />
+                        <TableColumn fx:id="vehicleIdTC" prefWidth="107.0" text="ID Veículo" />
+                        <TableColumn fx:id="clientIdTC" prefWidth="89.0" text="ID Cliente" />
+                        <TableColumn fx:id="userIdTC" prefWidth="110.0" text="ID User" />
+                    </columns>
+                </TableView>
+            <Button fx:id="removeRentalBTN" layoutX="997.0" layoutY="538.0" mnemonicParsing="false" onMouseClicked="#onRemoveRentalButtonClicked" prefHeight="31.0" prefWidth="186.0" styleClass="btn_home" stylesheets="@../../stylesheet.css" text="Remover selecionado" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Button>
+            <Text fill="WHITE" layoutX="428.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remover Registo de Aluguer">
+               <font>
+                  <Font name="Century Gothic Bold" size="25.0" />
+               </font>
+            </Text>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

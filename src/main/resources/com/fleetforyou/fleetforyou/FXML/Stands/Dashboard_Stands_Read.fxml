@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fleetforyou.fleetforyou.Controllers.Stands.DashboardStandsReadController">
+    <children>
+      <ImageView fitHeight="700.0" fitWidth="1200.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Images/vanishing-stripes.png" />
+         </image>
+      </ImageView>
+        <Pane prefHeight="120.0" prefWidth="1200.0" styleClass="pane7" stylesheets="@../../stylesheet.css" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="115.0" layoutY="24.0" prefHeight="66.0" prefWidth="492.0" text="Gestão de Stands" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="50.0" />
+                    </font>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </Label>
+                <FontAwesomeIconView fill="WHITE" glyphName="BANK" layoutX="50.0" layoutY="75.0" size="50">
+                    <effect>
+                        <Glow />
+                    </effect>
+                </FontAwesomeIconView>
+            </children>
+        </Pane>
+      <Pane layoutY="121.0" prefHeight="575.0" prefWidth="1200.0">
+         <children>
+            <TableView fx:id="standTV" layoutX="17.0" layoutY="56.0" prefHeight="505.0" prefWidth="1161.0" styleClass="tabela1" stylesheets="@../../stylesheet.css">
+               <columns>
+                  <TableColumn fx:id="standIdTC" prefWidth="56.0" text="ID" />
+                  <TableColumn fx:id="nameTC" prefWidth="270.0" text="Nome" />
+                  <TableColumn fx:id="addressTC" prefWidth="279.0" text="Morada" />
+                  <TableColumn fx:id="phoneNumberTC" prefWidth="137.0" text="Nº Contacto" />
+                  <TableColumn fx:id="postalCodeTC" prefWidth="100.0" text="Cód Postal" />
+                  <TableColumn fx:id="localTC" prefWidth="101.0" text="Localidade" />
+                  <TableColumn fx:id="districtTC" prefWidth="114.0" text="Distrito" />
+                  <TableColumn fx:id="deletedTC" prefWidth="103.0" text="Deletado" />
+               </columns>
+            </TableView>
+            <Text fill="WHITE" layoutX="33.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de Todos os Stands">
+               <font>
+                  <Font name="Century Gothic Bold" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fleetforyou.fleetforyou.Controllers.Rents.DashboardRentsController">
+   <children>
+      <ImageView fitHeight="699.0" fitWidth="1200.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Images/vanishing-stripes.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="120.0" prefWidth="1200.0" styleClass="pane7" stylesheets="@../../stylesheet.css" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="115.0" layoutY="24.0" text="Gestão de Alugueres" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="50.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="FILE" layoutX="50.0" layoutY="75.0" size="50">
+               <effect>
+                  <Glow />
+               </effect>
+            </FontAwesomeIconView>
+         </children>
+      </Pane>
+      <JFXButton fx:id="btn_FazerAluguer" layoutX="117.0" layoutY="226.0" onMouseClicked="#onStageFazerAluguerButtonClicked" prefHeight="215.0" prefWidth="237.5" styleClass="btn_Azul_2" stylesheets="@../../stylesheet.css" text="Fazer&#10;Aluguer" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="171.0">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_VerTodosAlugueres" layoutX="320.0" layoutY="171.0" onMouseClicked="#onStageVerTodosAlugueresButtonClicked" prefHeight="215.0" prefWidth="237.5" styleClass="btn_Azul_3" stylesheets="@../../stylesheet.css" text="Ver&#10;Todos&#10;Alugueres" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="337.5">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_Forms" layoutX="912.0" layoutY="171.0" onMouseClicked="#onStageFormsButtonClicked" prefHeight="215.0" prefWidth="237.5" styleClass="btn_Azul_4" stylesheets="@../../stylesheet.css" text="Formulários&#10;Satisfação" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="912.0" AnchorPane.topAnchor="171.0">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_AlterarAluguer" layoutX="600.0" layoutY="171.0" onMouseClicked="#onStageAlterarAluguerButtonClicked" prefHeight="215.0" prefWidth="237.5" styleClass="btn_Azul_5" stylesheets="@../../stylesheet.css" text="Terminar&#10;Aluguer" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="625.0" AnchorPane.topAnchor="171.0">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="50.0" layoutY="435.0" prefHeight="215.0" prefWidth="526.0" styleClass="imagem2" stylesheets="@../../stylesheet.css" AnchorPane.leftAnchor="50.0">
+         <children>
+            <ImageView fx:id="imagemRents" fitHeight="215.0" fitWidth="525.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../Images/iStock-1330071835.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="625.0" layoutY="435.0" prefHeight="215.0" prefWidth="526.0" styleClass="imagem2" stylesheets="@../../stylesheet.css">
+         <children>
+            <ImageView fx:id="imagemRents1" fitHeight="215.0" fitWidth="525.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../Images/7692-o-que-nao-pode-faltar-em-um-contrato-de-aluguel-comercial.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

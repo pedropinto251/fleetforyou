@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fleetforyou.fleetforyou.Controllers.Extras.DashboardExtrasUpdateController">
+    <children>
+        <Pane prefHeight="120.0" prefWidth="1200.0" styleClass="pane7" stylesheets="@../../stylesheet.css" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="115.0" layoutY="24.0" text="Users" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="50.0" />
+                    </font>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </Label>
+                <FontAwesomeIconView fill="WHITE" glyphName="PLUS" layoutX="50.0" layoutY="75.0" size="50">
+                    <effect>
+                        <Glow />
+                    </effect>
+                </FontAwesomeIconView>
+            </children>
+        </Pane>
+        <Pane layoutX="20.0" layoutY="139.0" prefHeight="551.0" prefWidth="1200.0">
+            <children>
+                <Label fx:id="nameLabel" layoutX="83.0" layoutY="105.0" text="Nome" />
+                <TextField fx:id="nameTF" layoutX="168.0" layoutY="101.0" />
+                <Label fx:id="emailLabel" layoutX="83.0" layoutY="155.0" text="Email" />
+                <TextField fx:id="emailTF" layoutX="168.0" layoutY="151.0" />
+                <Label fx:id="addressLabel" layoutX="83.0" layoutY="236.0" text="Morada" />
+                <TextField fx:id="addressTF" layoutX="168.0" layoutY="232.0" />
+                <Label fx:id="passwordLabel" layoutX="83.0" layoutY="201.0" text="Password" />
+                <Label fx:id="phoneNumberLabel" layoutX="83.0" layoutY="344.0" text="Nº Telefone" />
+                <TextField fx:id="phoneNumberTF" layoutX="168.0" layoutY="340.0" />
+                <Label fx:id="standLabel" layoutX="83.0" layoutY="304.0" text="Stand" />
+                <Button fx:id="updateEmployeeButton" layoutX="95.0" layoutY="498.0" mnemonicParsing="false" onMouseClicked="#onUpdateEmployeeButtonClicked" prefHeight="25.0" prefWidth="214.0" text="Atualizar" />
+                <Label fx:id="typeLabel" layoutX="83.0" layoutY="270.0" text="Tipo" />
+                <ChoiceBox fx:id="typeCB" layoutX="167.0" layoutY="266.0" prefWidth="150.0" />
+                <TextField fx:id="standTF" layoutX="168.0" layoutY="300.0" />
+                <Label fx:id="postalCodeLabel" layoutX="83.0" layoutY="377.0" text="Código-Postal" />
+                <TextField fx:id="postalCodeTF" layoutX="168.0" layoutY="373.0" />
+                <Label fx:id="localLabel" layoutX="83.0" layoutY="412.0" text="Localidade" />
+                <TextField fx:id="localTF" layoutX="168.0" layoutY="357.0" />
+                <Label fx:id="districtLabel" layoutX="83.0" layoutY="446.0" text="Distrito" />
+                <ChoiceBox fx:id="districtCB" layoutX="167.0" layoutY="442.0" prefWidth="150.0" />
+                <PasswordField fx:id="passwordPF" layoutX="167.0" layoutY="197.0" />
+            <Label fx:id="idEmployeeLabel" layoutX="85.0" layoutY="68.0" text="ID" />
+            <TextField fx:id="idEmployeeTF" layoutX="170.0" layoutY="64.0" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

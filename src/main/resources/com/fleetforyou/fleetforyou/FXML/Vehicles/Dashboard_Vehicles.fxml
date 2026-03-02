@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="background3" stylesheets="@../../stylesheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fleetforyou.fleetforyou.Controllers.Vehicles.DashboardVehiclesController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1200.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Images/vanishing-stripes.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="120.0" prefWidth="1200.0" styleClass="pane7" stylesheets="@../../stylesheet.css" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="125.0" layoutY="24.0" stylesheets="@../../stylesheet.css" text="Gestão de Veículos" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="50.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="CAR" layoutX="50.0" layoutY="75.0" size="50">
+               <effect>
+                  <Glow />
+               </effect>
+            </FontAwesomeIconView>
+         </children>
+      </Pane>
+      <Pane layoutX="634.0" layoutY="436.0" prefHeight="215.0" prefWidth="200.0" styleClass="btn_Azul_3" stylesheets="@../../stylesheet.css" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="634.0" AnchorPane.rightAnchor="50.0">
+         <children>
+            <Text fx:id="vehicleCount" fill="WHITE" layoutX="40.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12">
+               <font>
+                  <Font name="Century Gothic Bold" size="40.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="40.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veículos">
+               <font>
+                  <Font name="Century Gothic Bold" size="40.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="40.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disponíveis">
+               <font>
+                  <Font name="Century Gothic Bold" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <JFXButton fx:id="btn_VerTodosCarros" layoutX="129.0" layoutY="185.0" onMouseClicked="#onStageVerTodosCarrosButtonClicked" prefHeight="215.0" prefWidth="237.5" styleClass="btn_Azul_2" stylesheets="@../../stylesheet.css" text="Ver&#10;Todos&#10;Veículos&#10;" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="171.0">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_AddCarro" layoutX="338.0" layoutY="179.0" onMouseClicked="#onStageAddCarroButtonClicked" prefHeight="215.0" prefWidth="237.5" styleClass="btn_Azul_3" stylesheets="@../../stylesheet.css" text="Adicionar&#10;Veículos&#10;" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="337.5" AnchorPane.topAnchor="171.0">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_EditarCarro" layoutX="616.0" layoutY="164.0" onMouseClicked="#onStageEditarCarroButtonClicked" prefHeight="215.0" prefWidth="237.5" styleClass="btn_Azul_5" stylesheets="@../../stylesheet.css" text="Editar&#10;Veículos&#10;" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="625.0" AnchorPane.topAnchor="171.0">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_EliminarCarro" layoutX="907.0" layoutY="171.0" onMouseClicked="#onStageEliminarCarroButtonClicked" prefHeight="215.0" prefWidth="237.5" styleClass="btn_Azul_4" stylesheets="@../../stylesheet.css" text="Eliminar&#10;Veículos&#10;" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="912.0">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="imagemCarro" fitHeight="215.0" fitWidth="521.0" layoutX="50.0" layoutY="436.0" pickOnBounds="true" styleClass="imagem2">
+         <image>
+            <Image url="@../../Images/Captura%20de%20ecrã%202024-06-20%20033415.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

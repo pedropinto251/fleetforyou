@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fleetforyou.fleetforyou.Controllers.Stands.DashboardStandsController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1200.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Images/vanishing-stripes.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="50.0" layoutY="435.0" prefHeight="215.0" prefWidth="525.0" styleClass="imagem2" stylesheets="@../../stylesheet.css" />
+      <Pane prefHeight="120.0" prefWidth="1200.0" styleClass="pane7" stylesheets="@../../stylesheet.css" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="115.0" layoutY="24.0" prefHeight="66.0" prefWidth="492.0" text="Gestão de Stands" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="50.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="BANK" layoutX="50.0" layoutY="75.0" size="50">
+               <effect>
+                  <Glow />
+               </effect>
+            </FontAwesomeIconView>
+         </children>
+      </Pane>
+      <JFXButton fx:id="btn_VerTodosStands" layoutX="133.0" layoutY="229.0" onMouseClicked="#onStageVerTodosStandsButtonClicked" prefHeight="215.0" prefWidth="237.5" styleClass="btn_Azul_2" stylesheets="@../../stylesheet.css" text="Ver&#10;Todos&#10;Stands" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="171.0">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_AddStand" layoutX="335.0" layoutY="171.0" onMouseClicked="#onStageAddStandButtonClicked" prefHeight="215.0" prefWidth="237.5" styleClass="btn_Azul_3" stylesheets="@../../stylesheet.css" text="Adicionar&#10;Stands" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_EdtStand" layoutX="619.0" layoutY="182.0" onMouseClicked="#onStageEditarStandButtonClicked" prefHeight="215.0" prefWidth="237.5" styleClass="btn_Azul_5" stylesheets="@../../stylesheet.css" text="Editar&#10;Stand" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="625.0" AnchorPane.topAnchor="171.0">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_EliminarStand" layoutX="895.0" layoutY="171.0" onMouseClicked="#onStageEliminarStandButtonClicked" prefHeight="215.0" prefWidth="237.5" styleClass="btn_Azul_4" stylesheets="@../../stylesheet.css" text="Eliminar&#10;Stands" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="912.0">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="50.0" layoutY="435.0" prefHeight="215.0" prefWidth="525.0" styleClass="imagem2" stylesheets="@../../stylesheet.css">
+         <children>
+            <ImageView fx:id="imagemStand" fitHeight="215.0" fitWidth="525.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../Images/slide4521101.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="625.0" layoutY="435.0" prefHeight="215.0" prefWidth="525.0" styleClass="imagem2" stylesheets="@../../stylesheet.css">
+         <children>
+            <ImageView fx:id="imagemStand1" fitHeight="215.0" fitWidth="525.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../Images/1520216616494.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

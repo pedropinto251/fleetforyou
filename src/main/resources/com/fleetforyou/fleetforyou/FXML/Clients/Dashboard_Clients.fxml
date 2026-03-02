@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fleetforyou.fleetforyou.Controllers.Clients.DashboardClientsController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1200.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Images/vanishing-stripes.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="120.0" prefWidth="1200.0" styleClass="pane7" stylesheets="@../../stylesheet.css" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="115.0" layoutY="24.0" text="Área de Clientes" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="50.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="USERS" layoutX="50.0" layoutY="75.0" size="50">
+               <effect>
+                  <Glow />
+               </effect>
+            </FontAwesomeIconView>
+         </children>
+      </Pane>
+      <JFXButton fx:id="btn_VerTodosClientes" layoutX="117.0" layoutY="236.0" onMouseClicked="#onStageVerClientesButtonClicked" prefHeight="215.0" prefWidth="237.5" styleClass="btn_Azul_2" stylesheets="@../../stylesheet.css" text="Ver&#10;Todos&#10;Clientes" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="171.0">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_AddCliente" layoutX="331.0" layoutY="171.0" onMouseClicked="#onStageAddClientesButtonClicked" prefHeight="215.0" prefWidth="237.5" styleClass="btn_Azul_3" stylesheets="@../../stylesheet.css" text="Adicionar&#10;Clientes" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="337.5" AnchorPane.topAnchor="171.0">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_EditarCliente" layoutX="625.0" layoutY="151.0" onMouseClicked="#onStageEditarClientesButtonClicked" prefHeight="215.0" prefWidth="237.5" styleClass="btn_Azul_5" stylesheets="@../../stylesheet.css" text="Editar&#10;Clientes" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="625.0" AnchorPane.topAnchor="171.0">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_EliminarCliente" layoutX="912.0" layoutY="162.0" onMouseClicked="#onStageEliminarClientesButtonClicked" prefHeight="215.0" prefWidth="237.5" styleClass="btn_Azul_4" stylesheets="@../../stylesheet.css" text="Eliminar&#10;Clientes" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="912.0" AnchorPane.topAnchor="171.0">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="50.0" layoutY="435.0" prefHeight="215.0" prefWidth="525.0" styleClass="imagem2" stylesheets="@../../stylesheet.css" AnchorPane.leftAnchor="50.0">
+         <children>
+            <ImageView fx:id="imagemCliente" fitHeight="215.0" fitWidth="525.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../Images/car-dealers_car-showroom-624x416.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="625.0" layoutY="435.0" prefHeight="215.0" prefWidth="525.0" styleClass="imagem2" stylesheets="@../../stylesheet.css">
+         <children>
+            <ImageView fx:id="imagemCliente1" fitHeight="215.0" fitWidth="525.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../Images/images.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

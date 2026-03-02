@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root_home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="background1" stylesheets="@../stylesheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fleetforyou.fleetforyou.Controllers.HomeController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1200.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/vanishing-stripes.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="120.0" prefWidth="1200.0" styleClass="pane7" stylesheets="@../stylesheet.css">
+         <children>
+            <Label fx:id="welcomeLabel" layoutX="115.0" layoutY="40.0" text="Bem Vindo, caro(a) &quot;utilizador&quot;" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="32.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="HOME" layoutX="50.0" layoutY="75.0" size="50">
+               <effect>
+                  <Glow />
+               </effect>
+            </FontAwesomeIconView>
+         </children>
+      </Pane>
+      <Pane fx:id="paneContadorCarros" layoutX="50.0" layoutY="200.0" prefHeight="380.0" prefWidth="180.0" styleClass="pane1" stylesheets="@../stylesheet.css" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <Text fx:id="vehicleCount" fill="WHITE" layoutX="20.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="74">
+               <font>
+                  <Font name="Century Gothic Bold" size="50.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="13.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carros">
+               <font>
+                  <Font name="Century Gothic Bold" size="40.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="11.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número total&#10;de Viaturas.&#10;" wrappingWidth="157.48291015625">
+               <font>
+                  <Font name="Century Gothic Bold" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="paneContadorStands" layoutX="526.0" layoutY="153.0" prefHeight="380.0" prefWidth="180.0" styleClass="pane3" stylesheets="@../stylesheet.css" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="520.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <Text fx:id="standCount" fill="WHITE" layoutX="20.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+               <font>
+                  <Font name="Century Gothic Bold" size="50.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="13.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stands">
+               <font>
+                  <Font name="Century Gothic Bold" size="40.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="11.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stands em&#10;Parceria.&#10;" wrappingWidth="157.48291015625">
+               <font>
+                  <Font name="Century Gothic Bold" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="paneContadorClients" layoutX="546.0" layoutY="146.0" prefHeight="380.0" prefWidth="180.0" styleClass="pane2" stylesheets="@../stylesheet.css" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <Text fx:id="clientCount" layoutX="20.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="26">
+               <font>
+                  <Font name="Century Gothic Bold" size="50.0" />
+               </font>
+            </Text>
+            <Text layoutX="13.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clientes">
+               <font>
+                  <Font name="Century Gothic Bold" size="40.0" />
+               </font>
+            </Text>
+            <Text layoutX="11.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clientes&#10;Registados.&#10;" wrappingWidth="157.48291015625">
+               <font>
+                  <Font name="Century Gothic Bold" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="paneContadorCarros3" layoutX="750.0" layoutY="153.0" prefHeight="380.0" prefWidth="360.0" styleClass="pane4" stylesheets="@../stylesheet.css" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="750.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <Text fill="WHITE" layoutX="20.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="132.234">
+               <font>
+                  <Font name="Century Gothic Bold" size="50.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="26.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Km">
+               <font>
+                  <Font name="Century Gothic Bold" size="42.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="10.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número total de Km,&#10;percorridos juntos!!! Obrigado." wrappingWidth="365.48291015625">
+               <font>
+                  <Font name="Century Gothic Bold" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="59.0" layoutY="522.0" prefHeight="60.0" prefWidth="525.0" styleClass="paine6" stylesheets="@../stylesheet.css" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0">
+         <children>
+            <Text fill="WHITE" layoutX="231.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LP2">
+               <font>
+                  <Font name="Century Gothic Bold" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="625.0" layoutY="530.0" prefHeight="60.0" prefWidth="525.0" styleClass="paine6" stylesheets="@../stylesheet.css" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="50.0">
+         <children>
+            <Text fill="WHITE" layoutX="191.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grupo II">
+               <font>
+                  <Font name="Century Gothic Bold" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="248.0" layoutY="140.0" prefHeight="35.0" prefWidth="1150.0" styleClass="paine6" stylesheets="@../stylesheet.css" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <children>
+            <Label fx:id="userLabel" alignment="TOP_CENTER" layoutY="3.0" prefHeight="17.0" prefWidth="1099.0" styleClass="paine5" stylesheets="@../stylesheet.css" text="Utilizador" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fleetforyou.fleetforyou.Controllers.Rents.DashboardRentsReadController">
+    <children>
+      <ImageView fitHeight="700.0" fitWidth="1200.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Images/vanishing-stripes.png" />
+         </image>
+      </ImageView>
+        <Pane prefHeight="120.0" prefWidth="1200.0" styleClass="pane7" stylesheets="@../../stylesheet.css" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="115.0" layoutY="24.0" text="Gestão de Alugueres" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="50.0" />
+                    </font>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </Label>
+                <FontAwesomeIconView fill="WHITE" glyphName="FILE" layoutX="50.0" layoutY="75.0" size="50">
+                    <effect>
+                        <Glow />
+                    </effect>
+                </FontAwesomeIconView>
+            </children>
+        </Pane>
+      <Pane layoutY="121.0" prefHeight="573.0" prefWidth="1200.0">
+         <children>
+            <TableView fx:id="rentalTV" layoutX="206.0" layoutY="54.0" prefHeight="497.0" prefWidth="961.0" styleClass="tabela1" stylesheets="@../../stylesheet.css">
+               <columns>
+                  <TableColumn fx:id="rentalIdTC" prefWidth="29.0" text="ID" />
+                  <TableColumn fx:id="dateStartTC" prefWidth="83.0" text="Data Começo" />
+                  <TableColumn fx:id="dateEndTC" prefWidth="78.0" text="Data Fim" />
+                  <TableColumn fx:id="dateReturnTC" prefWidth="84.0" text="Data Retorno" />
+                  <TableColumn fx:id="vehicleIdTC" prefWidth="64.0" text="ID Veículo" />
+                  <TableColumn fx:id="clientIdTC" prefWidth="61.0" text="ID Cliente" />
+                   <TableColumn fx:id="userIdTC" prefWidth="51.0" text="ID User" />
+                   <TableColumn fx:id="vehicleStatusTC" prefWidth="89.0" text="Estado Veículo" />
+                  <TableColumn fx:id="vehicleTypeTC" prefWidth="69.0" text="Tipo" />
+                  <TableColumn fx:id="rentalPriceTC" prefWidth="89.0" text="Preço Aluguer" />
+                  <TableColumn fx:id="insuranceNameTC" prefWidth="79.0" text="Seguradora" />
+                  <TableColumn fx:id="insuranceTypeTC" prefWidth="84.0" text="Tipo Seguro" />
+                  <TableColumn fx:id="insurancePriceTC" prefWidth="100.0" text="Preço Seguro" />
+               </columns>
+            </TableView>
+             <TextField fx:id="clientSearchField" layoutX="33.0" layoutY="75.0" onKeyPressed="#onSearchKeyTyped" promptText="Procurar por Cliente" />
+             <TextField fx:id="vehicleSearchField" layoutX="33.0" layoutY="120.0" onKeyPressed="#onSearchKeyTyped" promptText="Procurar por Veículo" />
+            <Text fill="WHITE" layoutX="28.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Procurar Contrato de Aluguer">
+               <font>
+                  <Font name="Century Gothic Bold" size="25.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="vehicleTypeCB" layoutX="32.0" layoutY="177.0" prefWidth="150.0" />
+            <Text fill="WHITE" layoutX="33.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo:" wrappingWidth="262.93675231933594">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

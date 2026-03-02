@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fleetforyou.fleetforyou.Controllers.TopBarController">
+   <top>
+      <AnchorPane fx:id="mainpain" prefHeight="100.0" prefWidth="1200.0" styleClass="mainpain" stylesheets="@../stylesheet.css" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btn_home" layoutX="14.0" layoutY="21.0" onMouseClicked="#onStageHomeButtonClicked" prefHeight="50.0" prefWidth="142.857" styleClass="btn_home" stylesheets="@../stylesheet.css" text="Home" textFill="WHITE" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="21.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="40" />
+               </graphic>
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_carros" layoutX="208.0" layoutY="20.0" onMouseClicked="#onStageCarrosButtonClicked" prefHeight="60.0" prefWidth="142.857" styleClass="btn_home" stylesheets="@../stylesheet.css" text="Vehicles" textFill="WHITE" AnchorPane.leftAnchor="192.587" AnchorPane.topAnchor="20.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CAR" size="30" />
+               </graphic>
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_stands" layoutX="376.0" layoutY="20.0" onMouseClicked="#onStageStandsButtonClicked" prefHeight="60.0" prefWidth="142.857" styleClass="btn_home" stylesheets="@../stylesheet.css" text="Stands" textFill="WHITE" AnchorPane.leftAnchor="360.714" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="BANK" size="30" text="" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_clientes" layoutX="534.0" layoutY="20.0" onMouseClicked="#onStageClientesButtonClicked" prefHeight="60.0" prefWidth="142.857" styleClass="btn_home" stylesheets="@../stylesheet.css" text="Client " textFill="WHITE" AnchorPane.leftAnchor="528.571">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" size="30" />
+               </graphic>
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_Rents" layoutX="695.0" layoutY="20.0" onMouseClicked="#onStageRentsButtonClicked" prefHeight="60.0" prefWidth="142.857" styleClass="btn_home" stylesheets="@../stylesheet.css" text="Rents" textFill="WHITE" AnchorPane.leftAnchor="696.429" AnchorPane.topAnchor="20.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="FILE" size="30" />
+               </graphic>
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_extras" layoutX="852.0" layoutY="20.0" onMouseClicked="#onStageExtrasButtonClicked" prefHeight="60.0" prefWidth="142.857" styleClass="btn_home" stylesheets="@../stylesheet.css" text="Users" textFill="WHITE" AnchorPane.leftAnchor="864.285" AnchorPane.topAnchor="20.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="30" />
+               </graphic>
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_off" layoutX="1090.0" layoutY="20.0" onMouseClicked="#onOffButtonClicked" prefHeight="60.0" prefWidth="142.857" styleClass="btn_home" stylesheets="@../stylesheet.css" text="Log Off&#10;" textAlignment="CENTER" textFill="#84ff00" wrapText="true" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane fx:id="anchorPane" prefHeight="300.0" prefWidth="600.0" stylesheets="@../stylesheet.css" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="574.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <JFXBadge layoutX="136.0" layoutY="77.0" />
+            <JFXClippedPane layoutX="73.0" layoutY="88.0" />
+            <JFXDialog layoutX="397.0" layoutY="312.0" />
+            <JFXDialogLayout layoutX="710.0" layoutY="488.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

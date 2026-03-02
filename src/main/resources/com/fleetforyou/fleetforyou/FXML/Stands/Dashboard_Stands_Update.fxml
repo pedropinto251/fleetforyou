@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fleetforyou.fleetforyou.Controllers.Stands.DashboardStandsUpdateController">
+    <children>
+      <ImageView fitHeight="700.0" fitWidth="1200.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Images/vanishing-stripes.png" />
+         </image>
+      </ImageView>
+        <Pane layoutY="-1.0" prefHeight="122.0" prefWidth="1200.0" styleClass="pane7" stylesheets="@../../stylesheet.css" AnchorPane.topAnchor="-1.0">
+            <children>
+                <Label layoutX="115.0" layoutY="24.0" prefHeight="66.0" prefWidth="492.0" text="Gestão de Stands" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="50.0" />
+                    </font>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </Label>
+                <FontAwesomeIconView fill="WHITE" glyphName="BANK" layoutX="50.0" layoutY="75.0" size="50">
+                    <effect>
+                        <Glow />
+                    </effect>
+                </FontAwesomeIconView>
+            </children>
+        </Pane>
+      <Pane layoutY="121.0" prefHeight="583.0" prefWidth="1200.0">
+         <children>
+
+            <Label fx:id="phoneNumberLabel" layoutX="562.0" layoutY="194.0" text="Nº Telefone" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="addressLabel" layoutX="579.0" layoutY="249.0" text="Morada" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Label>
+            <TextField fx:id="addressTF" layoutX="526.0" layoutY="275.0" />
+            <Label fx:id="postalCodeLabel" layoutX="552.0" layoutY="375.0" text="Código-Postal" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Label>
+            <Button fx:id="updateStandButton" layoutX="525.0" layoutY="512.0" mnemonicParsing="false" onMouseClicked="#onUpdateStandButtonClicked" prefHeight="25.0" prefWidth="149.0" styleClass="btn_home" stylesheets="@../../stylesheet.css" text="Atualizar" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Button>
+            <Label fx:id="nameLabel" layoutX="584.0" layoutY="136.0" text="Nome" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Label>
+            <TextField fx:id="nameTF" layoutX="526.0" layoutY="161.0" />
+            <Label fx:id="idStandLabel" layoutX="594.0" layoutY="76.0" text="ID" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Label>
+            <TextField fx:id="idStandTF" layoutX="526.0" layoutY="99.0" />
+            <TextField fx:id="phoneNumberTF" layoutX="525.0" layoutY="218.0" />
+            <TextField fx:id="postalCodeTF" layoutX="525.0" layoutY="400.0" />
+             <ChoiceBox fx:id="districtCB" layoutX="524.0" layoutY="460.0" prefWidth="150.0" />
+            <Text fill="WHITE" layoutX="504.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Atualizar Stand">
+               <font>
+                  <Font name="Century Gothic Bold" size="25.0" />
+               </font>
+            </Text>
+            <Label fx:id="districtLabel1" layoutX="577.0" layoutY="431.0" prefHeight="18.0" prefWidth="54.0" text="Distrito" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="addressLabel1" layoutX="566.0" layoutY="311.0" text="Localidade" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="localTF" layoutX="529.0" layoutY="338.0" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

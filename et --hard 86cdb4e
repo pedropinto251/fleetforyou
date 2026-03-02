@@ -1,0 +1,226 @@
+[33mcommit 1bc68f53fc2b0156b242edcd6d2a9f517549af0b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelopment[m[33m, [m[1;31morigin/development[m[33m)[m
+Merge: 86cdb4e 7d95a1c
+Author: Daniel Pereira <1221476@isep.ipp.pt>
+Date:   Fri Jun 21 05:40:03 2024 +0100
+
+    Merge branch 'dev-DanielPereira' into development
+    
+    # Conflicts:
+    #       src/main/java/com/fleetforyou/fleetforyou/Controllers/Stands/DashboardStandsCreateController.java
+    #       src/main/resources/com/fleetforyou/fleetforyou/FXML/Clients/Dashboard_Clients_Create.fxml
+    #       src/main/resources/com/fleetforyou/fleetforyou/FXML/Clients/Dashboard_Clients_Delete.fxml
+    #       src/main/resources/com/fleetforyou/fleetforyou/FXML/Clients/Dashboard_Clients_Read.fxml
+    #       src/main/resources/com/fleetforyou/fleetforyou/FXML/Clients/Dashboard_Clients_Update.fxml
+    #       src/main/resources/com/fleetforyou/fleetforyou/FXML/Extras/Dashboard_Extras_Create.fxml
+    #       src/main/resources/com/fleetforyou/fleetforyou/FXML/Rents/Dashboard_Rents_Create.fxml
+    #       src/main/resources/com/fleetforyou/fleetforyou/FXML/Stands/Dashboard_Stands_Create.fxml
+    #       src/main/resources/com/fleetforyou/fleetforyou/FXML/Stands/Dashboard_Stands_Update.fxml
+
+[33mcommit 7d95a1c1b8a51d0d0520ef190005024fb88d2644[m[33m ([m[1;31morigin/dev-DanielPereira[m[33m)[m
+Author: Daniel Pereira <1221476@isep.ipp.pt>
+Date:   Fri Jun 21 05:36:43 2024 +0100
+
+    Ajuste na IG em varios ficheiros fxml (not final)
+
+[33mcommit 86cdb4e6ffa568913997726d6f98151612c8e08c[m[33m ([m[1;31morigin/dev-jose[m[33m, [m[1;31morigin/dev-DanielSilva[m[33m)[m
+Merge: f5e82f6 ca69c87
+Author: DANIEL SILVA <1231749@isep.ipp.pt>
+Date:   Thu Jun 20 23:22:15 2024 +0100
+
+    Merge branch 'development' into dev-DanielSilva
+    
+    # Conflicts:
+    #       src/main/resources/com/fleetforyou/fleetforyou/FXML/Clients/Dashboard_Clients_Create.fxml
+    #       src/main/resources/com/fleetforyou/fleetforyou/FXML/Clients/Dashboard_Clients_Read.fxml
+    #       src/main/resources/com/fleetforyou/fleetforyou/FXML/Clients/Dashboard_Clients_Update.fxml
+    #       src/main/resources/com/fleetforyou/fleetforyou/FXML/Vehicles/Dashboard_Vehicles_Create.fxml
+
+[33mcommit f5e82f679cc8a2c963f5e4b4bc8c7193eeafa4ce[m
+Author: DANIEL SILVA <1231749@isep.ipp.pt>
+Date:   Thu Jun 20 23:17:24 2024 +0100
+
+    Alteração de fxml para uma interface uniforme sem erros,
+    Validação de Stands 100 % feita
+
+[33mcommit ca69c87ddfb24a07363d301de17f78e754162937[m
+Author: José Almeida <1221494@isep.ipp.pt>
+Date:   Thu Jun 20 23:01:55 2024 +0100
+
+    FXMLs & Controllers:
+    - Remoção de função inutilizada
+
+[33mcommit 2489bd698aa45b44b3c698d3616c90f15063714c[m
+Author: José Almeida <1221494@isep.ipp.pt>
+Date:   Thu Jun 20 22:50:09 2024 +0100
+
+    FXML:
+    - Remoção de Padding
+
+[33mcommit 8479f2664be5ed4f9c567315d49f40cfc12669b2[m
+Author: DANIEL SILVA <1231749@isep.ipp.pt>
+Date:   Thu Jun 20 22:36:41 2024 +0100
+
+    Validações 100 % e ajuste de fxml para os clientes
+
+[33mcommit 65de99c50c5d943e4cc7de7495e175cbdc2167c1[m
+Merge: 559bbf6 1b4cd16
+Author: José Almeida <1221494@isep.ipp.pt>
+Date:   Thu Jun 20 22:32:32 2024 +0100
+
+    Merge branch 'dev-jose' into development
+    
+    # Conflicts:
+    #       src/main/resources/com/fleetforyou/fleetforyou/FXML/Stands/Dashboard_Stands_Create.fxml
+
+[33mcommit 1b4cd16df60800812fb2cde82ea3fc31238c7105[m
+Author: José Almeida <1221494@isep.ipp.pt>
+Date:   Thu Jun 20 22:30:35 2024 +0100
+
+    Rental:
+    - Remoção de comentário
+    
+    LoaderFXML:
+    - Adição de título aos separados
+    
+    FXML:
+    - Correção de Padding em alguns FXML
+
+[33mcommit 559bbf63a14e4c824987dd5c41dde93d9b29545f[m
+Author: DANIEL SILVA <1231749@isep.ipp.pt>
+Date:   Thu Jun 20 21:52:59 2024 +0100
+
+    Adição de clientes 100 % validada,correção de erros ortográficos
+
+[33mcommit 5f85c0da8678e08b41ee4e2bb9d05454a26ebf27[m
+Merge: 85f45f5 30d1b9b
+Author: DANIEL SILVA <1231749@isep.ipp.pt>
+Date:   Thu Jun 20 21:47:24 2024 +0100
+
+    Merge branch 'development' into dev-DanielSilva
+
+[33mcommit 85f45f5763d78d5df1aff5f373d0c515b5ec7d5f[m
+Author: DANIEL SILVA <1231749@isep.ipp.pt>
+Date:   Thu Jun 20 21:46:56 2024 +0100
+
+    Adição de clientes 100 % validada
+
+[33mcommit 30d1b9b1351a04e248bb78eb4379607ace23ed49[m
+Merge: 8d8aae0 c330189
+Author: José Almeida <1221494@isep.ipp.pt>
+Date:   Thu Jun 20 21:30:33 2024 +0100
+
+    Merge branch 'dev-jose' into development
+
+[33mcommit c33018983ae257b7f2464e9c294f84987a26163e[m
+Author: José Almeida <1221494@isep.ipp.pt>
+Date:   Thu Jun 20 21:30:03 2024 +0100
+
+    Stands:
+    - Remoção de código
+
+[33mcommit 17bb22e0f8932bfd39416ea85ef40079aabc8020[m
+Author: José Almeida <1221494@isep.ipp.pt>
+Date:   Thu Jun 20 21:25:36 2024 +0100
+
+    Rental:
+    - Alteração de ordem de processos
+
+[33mcommit e2aa95addde392af6592cfe3da586738baaad6bb[m
+Author: José Almeida <1221494@isep.ipp.pt>
+Date:   Thu Jun 20 21:24:32 2024 +0100
+
+    Rental:
+    - Filtragem por cliente & veículos disponíveis
+
+[33mcommit 8d8aae033aa5bbbdf935f6b94a7c44f4349aa85e[m
+Author: DANIEL SILVA <1231749@isep.ipp.pt>
+Date:   Thu Jun 20 20:48:54 2024 +0100
+
+    Inicialização de validação para criação de adiconar stands
+
+[33mcommit 61c4a4ebd7900a8da875e499c50adc5c9fa7d6ee[m
+Author: DANIEL SILVA <1231749@isep.ipp.pt>
+Date:   Thu Jun 20 20:17:12 2024 +0100
+
+    Validação do addvehicles,editvehicles,deletevehicles 100 %
+    Adição do campo "Preço de venda" no editvehicles
+
+[33mcommit 138d31fbe41cf581d55cbc7154f4474c5ce8976c[m
+Merge: 091f9ad b426af4
+Author: José Almeida <1221494@isep.ipp.pt>
+Date:   Thu Jun 20 19:57:37 2024 +0100
+
+    Merge branch 'development' into dev-jose
+
+[33mcommit 091f9ad7f61e3ef71ead6948e367d3b0cb74cb5b[m
+Author: José Almeida <1221494@isep.ipp.pt>
+Date:   Thu Jun 20 19:57:13 2024 +0100
+
+    Stands:
+    - Filtragem por distritos não usados funcional
+
+[33mcommit 37537dd7cafc44fa268511d80847b19a08c9e6ff[m
+Author: José Almeida <1221494@isep.ipp.pt>
+Date:   Thu Jun 20 19:40:55 2024 +0100
+
+    Stands:
+    - Filtragem de permissões nos ChoiceBoxes melhorada
+
+[33mcommit b426af45ac3788ea538fec886c2fdbe6ebae3215[m
+Author: DANIEL SILVA <1231749@isep.ipp.pt>
+Date:   Thu Jun 20 19:17:59 2024 +0100
+
+    Validação dos vehicles 100 %
+
+[33mcommit 58003e3fba87d3cf9bcd0b38653c7b1cc7eaed05[m
+Author: Daniel Silva <1231749@isep.ipp.pt>
+Date:   Thu Jun 20 16:17:43 2024 +0100
+
+    Validações vehicles quase concluidas duvida para apresentar ao professor sobre a validação dos KMs
+
+[33mcommit 5d51cb2562198140ec3b5019fe93c46229aa97e5[m
+Author: Daniel Pereira <1221476@isep.ipp.pt>
+Date:   Thu Jun 20 04:34:35 2024 +0100
+
+    fix ui dashboard (not final)
+
+[33mcommit 7a9335fba43821aa2a7af72af8b142c9c62e8403[m
+Merge: 01f0dfe a9a10ed
+Author: Daniel Silva <1231749@isep.ipp.pt>
+Date:   Thu Jun 20 00:52:57 2024 +0100
+
+    Merge branch 'refs/heads/dev-DanielSilva' into development
+
+[33mcommit a9a10ed43e6a0b7d0329a6adae15a9df08d66067[m
+Author: Daniel Silva <1231749@isep.ipp.pt>
+Date:   Thu Jun 20 00:51:33 2024 +0100
+
+    Validações para carros 100 % funcinaís
+    (O codigo pode ser melhorado com os regex dentro das verificações do estado vazio ou com caracteres invisiveis ).
+
+[33mcommit 405da239a4cec45800a5a14d1f7ad232e56cce3c[m
+Author: DANIEL SILVA <1231749@isep.ipp.pt>
+Date:   Thu Jun 20 00:13:22 2024 +0100
+
+    Validações parei na potencia(não pode colocar strings)
+
+[33mcommit 993f3b06760bded7c27cfe147537c479c9eca488[m
+Author: DANIEL SILVA <1231749@isep.ipp.pt>
+Date:   Thu Jun 20 00:12:15 2024 +0100
+
+    Remoção de algums butões que estavam a mais <3
+
+[33mcommit 7447f15cd52d23c8ca4e9a6c6766f59edf12be3d[m
+Author: Daniel Pereira <1221476@isep.ipp.pt>
+Date:   Wed Jun 19 23:32:53 2024 +0100
+
+    Little fix topbar (not final)
+
+[33mcommit 01f0dfede073b86a6d2fb48258ae68821ccee2fb[m[33m ([m[1;31morigin/dev-paulo[m[33m)[m
+Author: José Almeida <1221494@isep.ipp.pt>
+Date:   Wed Jun 19 23:21:16 2024 +0100
+
+    Stands:
+    - Filtragem de permissões nos ChoiceBoxes (Por melhorar)
+
+[33mcommit e75e2aad24bb437286829cf6ef30d86e3

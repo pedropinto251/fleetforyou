@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fleetforyou.fleetforyou.Controllers.Clients.DashboardClientsCreateController">
+    <children>
+      <ImageView fitHeight="700.0" fitWidth="1200.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Images/vanishing-stripes.png" />
+         </image>
+      </ImageView>
+        <Pane layoutY="-4.0" prefHeight="131.0" prefWidth="1200.0" styleClass="pane7" stylesheets="@../../stylesheet.css" AnchorPane.topAnchor="-4.0">
+            <children>
+                <Label layoutX="115.0" layoutY="24.0" text="Área de Clientes" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="50.0" />
+                    </font>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </Label>
+                <FontAwesomeIconView fill="WHITE" glyphName="USERS" layoutX="50.0" layoutY="75.0" size="50">
+                    <effect>
+                        <Glow />
+                    </effect>
+                </FontAwesomeIconView>
+            </children>
+        </Pane>
+        <Pane layoutX="-1.0" layoutY="125.0" prefHeight="576.0" prefWidth="1200.0">
+            <children>
+                <Label fx:id="nameLabel" layoutX="461.0" layoutY="104.0" text="Nome" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Label>
+                <TextField fx:id="nameTF" layoutX="525.0" layoutY="100.0" />
+                <Label fx:id="phoneLabel" layoutX="454.0" layoutY="159.0" text="Telefone" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Label>
+                <TextField fx:id="phoneTF" layoutX="526.0" layoutY="155.0" />
+                <Label fx:id="postalCodeLabel" layoutX="422.0" layoutY="262.0" text="Código-Postal" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Label>
+                <TextField fx:id="postalCodeTF" layoutX="526.0" layoutY="258.0" />
+                <Label fx:id="addressLabel" layoutX="456.0" layoutY="211.0" text="Morada" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Label>
+                <TextField fx:id="addressTF" layoutX="526.0" layoutY="207.0" />
+                <Label fx:id="ncLabel" layoutX="419.0" layoutY="410.0" text="Nº Contribuinte" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Label>
+                <TextField fx:id="ncTF" layoutX="526.0" layoutY="406.0" />
+                <Label fx:id="districtLabel" layoutX="458.0" layoutY="360.0" text="Distrito" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Label>
+                <ChoiceBox fx:id="districtCB" layoutX="525.0" layoutY="356.0" prefWidth="150.0" />
+                <Button fx:id="addClientButton" layoutX="502.0" layoutY="465.0" mnemonicParsing="false" onMouseClicked="#onAddClientButtonClicked" prefHeight="25.0" prefWidth="195.0" styleClass="btn_home" stylesheets="@../../stylesheet.css" text="Adicionar" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Button>
+                <Label fx:id="localLabel" layoutX="438.0" layoutY="314.0" text="Localidade" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Label>
+                <TextField fx:id="localTF" layoutX="526.0" layoutY="310.0" />
+            <Text fill="WHITE" layoutX="494.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adicionar Cliente">
+               <font>
+                  <Font name="Century Gothic Bold" size="25.0" />
+               </font>
+            </Text>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
